@@ -10,14 +10,16 @@ y = 1 (old current state)
 
 x = 1 (old state)
 
-w = 1 (stack)
+w - lowercase 'w'  = 1 (stack)
 
-W = 1 (stack)
+W - uppercase 'W'  = 1 (stack)
 
 N = D (eliminated state)
 
 p - lowercase 'p' = 1 (input)
 
 P - uppercase 'P' = do not reset (input)
+
+t = checked out pushing Stack
 
 S = Stack
