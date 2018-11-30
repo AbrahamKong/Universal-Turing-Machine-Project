@@ -2,16 +2,11 @@
 	<type>turing</type>
 	<automaton>
 		<!--The list of states.-->
-		<block id="0" name="q0">
-			<tag>Machine0</tag>
-			<x>74.0</x>
-			<y>156.0</y>
-			<initial/>
-		</block>
 		<block id="1" name="q1">
 			<tag>Machine1</tag>
 			<x>219.0</x>
 			<y>155.0</y>
+			<initial/>
 		</block>
 		<block id="2" name="q2">
 			<tag>Machine2</tag>
@@ -27,17 +22,59 @@
 		<!--The list of transitions.-->
 		<transition>
 			<from>1</from>
+			<to>2</to>
+			<read>F</read>
+			<write>F</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>1</from>
 			<to>1</to>
 			<read>W</read>
 			<write>1</write>
 			<move>R</move>
 		</transition>
 		<transition>
-			<from>0</from>
-			<to>1</to>
+			<from>2</from>
+			<to>2</to>
+			<read>D</read>
+			<write>D</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
 			<read>C</read>
 			<write>C</write>
-			<move>R</move>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>m</read>
+			<write>m</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>1</read>
+			<write>1</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>0</read>
+			<write>0</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>P</read>
+			<write>P</write>
+			<move>L</move>
 		</transition>
 		<transition>
 			<from>2</from>
@@ -45,97 +82,6 @@
 			<read/>
 			<write/>
 			<move>R</move>
-		</transition>
-		<transition>
-			<from>0</from>
-			<to>0</to>
-			<read>0</read>
-			<write>0</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>0</from>
-			<to>0</to>
-			<read>1</read>
-			<write>1</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>0</from>
-			<to>0</to>
-			<read>x</read>
-			<write>x</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>0</from>
-			<to>0</to>
-			<read>N</read>
-			<write>N</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>0</from>
-			<to>0</to>
-			<read>D</read>
-			<write>D</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>0</from>
-			<to>0</to>
-			<read>w</read>
-			<write>w</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>0</from>
-			<to>0</to>
-			<read>W</read>
-			<write>W</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>2</from>
-			<to>2</to>
-			<read>1</read>
-			<write>1</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>2</from>
-			<to>2</to>
-			<read>D</read>
-			<write>D</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>2</from>
-			<to>2</to>
-			<read>0</read>
-			<write>0</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>0</from>
-			<to>0</to>
-			<read>m</read>
-			<write>m</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>2</from>
-			<to>2</to>
-			<read>m</read>
-			<write>m</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>1</from>
-			<to>2</to>
-			<read>S</read>
-			<write>S</write>
-			<move>L</move>
 		</transition>
 		<transition>
 			<from>1</from>
@@ -159,7 +105,6 @@
 			<move>R</move>
 		</transition>
 		<!--The list of automata-->
-		<Machine0/>
 		<Machine2/>
 		<Machine1/>
 		<Machine3/>
